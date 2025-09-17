@@ -12,7 +12,6 @@ public class Invetariotienda {
     }
 
     // Metodo agregar producto
-    // Complejidad: O(1) promedio
     public void agregarProducto(Producto p) {
         if (inventario.containsKey(p.getCodigo())) {
             System.out.println("Producto ya existe, actualizando stock.");
@@ -64,7 +63,7 @@ public class Invetariotienda {
         return lista;
     }
 
-    // Retornar precio de todo el inventario
+    // Retornar precio de tódo el inventario
     public double precioTotalInventario() {
         double total = 0;
         for (Producto p : inventario.values()) {
