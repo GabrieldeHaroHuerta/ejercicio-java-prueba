@@ -15,11 +15,11 @@ public class Main {
         tienda.agregarProducto(new Producto("006", "Tablet Samsung", 600.0, Categoria.TABLET, 4));
 
         // Pruebas
-        System.out.println("=== Inventario Inicial ===");
+        System.out.println("Inventario Inicial");
         System.out.println(tienda);
 
         // Añadir producto duplicado
-        tienda.agregarProducto(new Producto("P002", "iPhone 13", 1000.0, Categoria.SMARTPHONE, 5));
+        tienda.agregarProducto(new Producto("002", "iPhone 13", 1000.0, Categoria.SMARTPHONE, 5));
 
         // Vender productos
         tienda.venderProducto("001", 2);
@@ -31,13 +31,13 @@ public class Main {
         tienda.actualizarStock("999", 2); // Producto inexistente
 
         // Buscar productos por categoría
-        System.out.println("=== Productos SMARTPHONE ===");
+        System.out.println("Productos SMARTPHONE");
         List<Producto> smartphones = tienda.productosPorCategoria(Categoria.SMARTPHONE);
         for (Producto p : smartphones) {
             System.out.println(p);
         }
 
-        System.out.println("=== Inventario Final ===");
+        System.out.println("Inventario Final");
         System.out.println(tienda);
     }
 }
