@@ -1,23 +1,23 @@
 package Ejercicio_1_pruebas;
 
 public class Producto {
-    private int codigo;
+    private String codigo;
     private String nombre;
     private double precio;
-    private String categoria;
+    private Categoria categoria;
     private int stock;
 
-    public Producto(int codigo, String nombre, double precio, String categoria, int stock) {
+    public Producto(String codigo, String nombre, double precio, Categoria categoria, int stock) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.precio = precio;
         this.categoria = categoria;
         this.stock = stock;
     }
-    public int getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
-    public void setCodigo(int codigo) {
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
     public String getNombre() {
@@ -32,10 +32,10 @@ public class Producto {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-    public String getCategoria() {
+    public Categoria getCategoria() {
         return categoria;
     }
-    public void setCategoria(String categoria) {
+    public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
     public int getStock() {
